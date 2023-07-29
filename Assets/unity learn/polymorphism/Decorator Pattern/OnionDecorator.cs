@@ -1,4 +1,8 @@
 // Concrete Decorator
+
+using System;
+using UnityEngine;
+
 public class OnionDecorator : PizzaDecorator
 {
     public OnionDecorator(IFlavourable flavour) : base(flavour)
@@ -12,4 +16,5 @@ public class OnionDecorator : PizzaDecorator
         flavour += "\r\n com extra de cebola!";
         return flavour;
     }
+    
 }
